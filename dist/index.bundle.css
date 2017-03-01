@@ -14,6 +14,13 @@ body, p, blockquote, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, form, field
 .headerbox1-01, .headerbox1-02 {
   padding: 4px; }
 
+.headerbox1-02 .headerbox1-02_img-holder > img {
+  display: block;
+  width: 100%;
+  /* optional */
+  max-width: 100%;
+  height: auto; }
+
 body, p, blockquote, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, form, fieldset, legend, input, textarea, select {
   margin: 0;
   padding: 0; }
@@ -749,6 +756,23 @@ h1 {
 
 .item-id {
   background-color: #ccc; }
+
+.headerbox1-02 .headerbox1-02_img-holder {
+  border: 1px solid #000;
+  width: 60px;
+  height: 60px; }
+
+@media (min-width: 20em) {
+  .headerbox1-02_img-holder {
+    float: none;
+    margin: auto;
+    margin-bottom: 6px; } }
+
+@media (min-width: 30em) {
+  .headerbox1-02_img-holder {
+    float: left;
+    margin-right: 4px;
+    margin-bottom: auto; } }
 
 body:before {
   background-color: #FCF8E3;

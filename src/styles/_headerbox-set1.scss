@@ -27,7 +27,40 @@ h1 {
 @mixin headerbox1-02 {
   .headerbox1-02 {
     @extend %padd--4;
+
+    .headerbox1-02_img-holder {
+      border: 1px solid #000;
+      width: 60px;
+      height: 60px;
+
+      >img {
+        @extend %img--responsive;
+      }
+      // see mq below for extra properties
+    }    
   }
+
+// mobile portrait (320x480) 
+@include mq($from: mobile) {
+.headerbox1-02_img-holder {
+  float: none;
+  margin: auto;
+  margin-bottom: 6px;
+  } 
+}
+
+// *mobile landscape (480x320)
+@include mq($from: mobileLandscape) {
+  .headerbox1-02_img-holder {
+  float: left;
+  margin-right: 4px;
+  margin-bottom: auto;
+  } 
+}
+
+
+
+
 }
 
 @include headerbox1-02;

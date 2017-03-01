@@ -18,12 +18,12 @@ h1 {
 .headerbox1-01 {
   text-align: left;
   > p {
-    margin-top: -2px;
+    // margin-top: -2px;
   }
 
-  .headerbox1-01 > p,
-  .headerbox1-01 > h2,
-  .headerbox1-01 > hr {
+  p,
+  h2,
+  hr {
     margin-left: 4px;
   }
 }   

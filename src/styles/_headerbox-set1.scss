@@ -26,16 +26,7 @@ h1 {
 // ==================================================/
 @mixin headerbox1-02 {
   .headerbox1-02 {
-    text-align: left;
-    > p {
-      margin-top: -2px;
-    }
-
-    .headerbox1-02 > p,
-    .headerbox1-02 > h2,
-    .headerbox1-02 > hr {
-      margin-left: 4px;
-    }
+    @extend %padd--4;
   }
 }
 

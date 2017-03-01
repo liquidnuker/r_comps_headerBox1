@@ -15,6 +15,18 @@ h1 {
 // headerbox1-01
 // ==================================================/
 @mixin headerbox1-01 {
+.headerbox1-01 {
+  text-align: left;
+  > p {
+    margin-top: -2px;
+  }
+
+  .headerbox1-01 > p,
+  .headerbox1-01 > h2,
+  .headerbox1-01 > hr {
+    margin-left: 4px;
+  }
+}   
 
 }
 

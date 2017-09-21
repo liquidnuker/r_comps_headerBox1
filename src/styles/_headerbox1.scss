@@ -1,26 +1,18 @@
-// 
+// headerbox101
 // ==================================================/
-body {
-  @extend %system_normal--400;
-}
+.headerbox101 {
+  @extend %padd--4;
 
-h1 {
-  display: none;
-}
+  hr {
+    border: none;
+    height: 1px;
+    color: #000; /* old IE */
+    background-color: #000; /* Modern Browsers */
+  }
+}   
 
-.item-id {
-  background-color: #ccc;
-}
 
-// headerbox1-01
-// ==================================================/
-@mixin headerbox1-01 {
-  .headerbox1-01 {
-    @extend %padd--4;
-  }   
-}
 
-@include headerbox1-01;
 
 // headerbox1-02
 // ==================================================/

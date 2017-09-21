@@ -1,57 +1,95 @@
 // headerbox101
 // ==================================================/
+@mixin headerbox101_theme() {
+  .headerbox101 {
+    background-color: #1c1d22;
+    color: #d5d5d5;
+
+    h2 {
+     color: #fff;
+    }
+
+    hr {
+      color: #5c5d60; /* old IE */
+      background-color: #5c5d60; /* Modern Browsers */
+    }
+  }
+}
+@include headerbox101_theme();
+
 .headerbox101 {
   @extend %padd--4;
+
+  h2 {
+    // margin-bottom: 2px;
+  }
 
   hr {
     border: none;
     height: 1px;
-    color: #000; /* old IE */
-    background-color: #000; /* Modern Browsers */
   }
-}   
+}
 
-
-
-
-// headerbox1-02
+// headerbox102
 // ==================================================/
-@mixin headerbox1-02 {
-  .headerbox1-02 {
-    @extend %padd--4;
+@mixin headerbox102_theme() {
+  .headerbox102 {
+    background-color: #1c1d22;
+    color: #d5d5d5;
 
-    .headerbox1-02_img-holder {
-      border: 1px solid #000;
-      width: 60px;
-      height: 60px;
+    .headerbox102_img-holder {
+      border: 1px solid #5c5d60;
+    }
 
-      >img {
-        @extend %img--responsive;
-      }
-      // see mq below for extra properties
-    }    
+    h2 {
+     color: #fff;
+    }
+
+    hr {
+      color: #5c5d60; /* old IE */
+      background-color: #5c5d60; /* Modern Browsers */
+    }
   }
+}
+@include headerbox102_theme();
+
+.headerbox102 {
+  @extend %padd--4;
+
+  h2 {
+    // margin-bottom: 2px;
+  }
+
+  hr {
+    border: none;
+    height: 1px;
+  }
+
+  .headerbox102_img-holder {
+    width: 60px;
+    height: 60px;
+
+    > img {
+      @extend %img--responsive;
+    }
+    // see mq below for extra properties
+  }    
+}
 
 // mobile portrait (320x480) 
 @include mq($from: mobile) {
-.headerbox1-02_img-holder {
-  float: none;
-  margin: auto;
-  margin-bottom: 6px;
+  .headerbox102_img-holder {
+    float: none;
+    margin: auto;
+    margin-bottom: 6px;
   } 
 }
 
 // *mobile landscape (480x320)
 @include mq($from: mobileLandscape) {
-  .headerbox1-02_img-holder {
-  float: left;
-  margin-right: 4px;
-  margin-bottom: auto;
+  .headerbox102_img-holder {
+    float: left;
+    margin-right: 4px;
+    margin-bottom: auto;
   } 
 }
-}
-
-@include headerbox1-02;
-
-// 
-// ==================================================/

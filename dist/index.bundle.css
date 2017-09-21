@@ -28,10 +28,10 @@ input [type="button"],
   margin: 0;
   padding: 0; }
 
-.btn1-01, .headerbox101, .headerbox1-02 {
+.btn1-01, .headerbox101, .headerbox102 {
   padding: 4px; }
 
-.headerbox1-02 .headerbox1-02_img-holder > img {
+.headerbox102 .headerbox102_img-holder > img {
   display: block;
   width: 100%;
   /* optional */
@@ -801,27 +801,50 @@ input [type="button"],
   .col-lg-1 {
     width: 8.33333333%; } }
 
+.headerbox101 {
+  background-color: #1c1d22;
+  color: #d5d5d5; }
+  .headerbox101 h2 {
+    color: #fff; }
+  .headerbox101 hr {
+    color: #5c5d60;
+    /* old IE */
+    background-color: #5c5d60;
+    /* Modern Browsers */ }
+
 .headerbox101 hr {
   border: none;
-  height: 1px;
-  color: #000;
-  /* old IE */
-  background-color: #000;
-  /* Modern Browsers */ }
+  height: 1px; }
 
-.headerbox1-02 .headerbox1-02_img-holder {
-  border: 1px solid #000;
+.headerbox102 {
+  background-color: #1c1d22;
+  color: #d5d5d5; }
+  .headerbox102 .headerbox102_img-holder {
+    border: 1px solid #5c5d60; }
+  .headerbox102 h2 {
+    color: #fff; }
+  .headerbox102 hr {
+    color: #5c5d60;
+    /* old IE */
+    background-color: #5c5d60;
+    /* Modern Browsers */ }
+
+.headerbox102 hr {
+  border: none;
+  height: 1px; }
+
+.headerbox102 .headerbox102_img-holder {
   width: 60px;
   height: 60px; }
 
 @media (min-width: 20em) {
-  .headerbox1-02_img-holder {
+  .headerbox102_img-holder {
     float: none;
     margin: auto;
     margin-bottom: 6px; } }
 
 @media (min-width: 30em) {
-  .headerbox1-02_img-holder {
+  .headerbox102_img-holder {
     float: left;
     margin-right: 4px;
     margin-bottom: auto; } }

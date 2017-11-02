@@ -53,6 +53,25 @@
 }
 @include headerbox102_theme();
 
+// mobile portrait (320x480) 
+@include mq($from: mobile) {
+  .headerbox102_img-holder {
+    float: none;
+    margin: auto;
+    margin-bottom: 6px;
+  } 
+}
+
+// *mobile landscape (480x320)
+@include mq($from: mobileLandscape) {
+  .headerbox102_img-holder {
+    float: left;
+    margin-right: 4px;
+    margin-bottom: auto;
+  } 
+}
+// end breakpoints
+
 .headerbox102 {
   @extend %padd--4;
 
@@ -72,24 +91,6 @@
     > img {
       @extend %img--responsive;
     }
-    // see mq below for extra properties
+    // see breakpoints for extra properties
   }    
-}
-
-// mobile portrait (320x480) 
-@include mq($from: mobile) {
-  .headerbox102_img-holder {
-    float: none;
-    margin: auto;
-    margin-bottom: 6px;
-  } 
-}
-
-// *mobile landscape (480x320)
-@include mq($from: mobileLandscape) {
-  .headerbox102_img-holder {
-    float: left;
-    margin-right: 4px;
-    margin-bottom: auto;
-  } 
 }
